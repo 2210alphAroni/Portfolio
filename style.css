@@ -40,7 +40,6 @@
         height: 200px;
         object-fit: cover;     /* Makes image cover the area nicely */
         border-radius: 50%;    /* Perfect circle */
-        border: 5px solid mediumseagreen;
         box-shadow: 0 5px 15px rgba(0,0,0,0.15);
         margin-top: 30px;      /* Space from header (header height ~60px + 20px) */
         transition: transform 0.3s ease;
