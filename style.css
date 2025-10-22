@@ -210,6 +210,16 @@ section:nth-child(even) {
   animation: fadeInUp 1.3s ease forwards;
 }
 
+.languages {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.languages ul {
+  list-style: none;
+  padding: 0;
+}
+
 .skills:hover, .languages:hover {
   transform: translateY(-8px) scale(1.02);
   box-shadow: 0 0 40px rgba(16, 185, 129, 0.3);
