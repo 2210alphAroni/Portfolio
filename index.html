@@ -1,254 +1,281 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="shortcut icon" href="favicon-img.png" type="image/x-icon">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Md. Nabinur Islam Roni</title>
+    <link rel="shortcut icon" href="favicon-img.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Header -->
-  <header>
-    <div class="left-header">
-      <span class="logo">My-Portfolio</span>
-      <button class="hire-me"><a style="color: white; text-decoration: none; font-family: monospace;" href="#contact">Hire Me</a></button>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <div class="logo">P<img style="width: 1.7rem;" src="computer.png" alt="computer">folio</div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <br><br><br>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <img style="width: 40%;" src="20250917_015815.jpg" alt="image-myself">
+            <p class="hello" style="color: var(--primary-blue);">Hello, I'm</p>
+            <h1>Md. Nabinur Islam Roni</h1>
+            <h2>Web Developer & Creative Problem Solver</h2>
+            <p>I craft beautiful, functional web experiences. Dedicated to delivering immaculate about clean code, robust functionality, and intuitive designs.</p>
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+            <div class="hero-social">
+                <a href="https://www.linkedin.com/in/md-nabinur-islam-roni-46b894373?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/2210alphAroni" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://whatsapp-web-design.onrender.com/" target="_blank" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+                <a href="mailto:nabinuri80@gmail.com" aria-label="Mail"><i class="fas fa-envelope"></i></a>
+            </div>
 
-  <!-- Home Section -->
-  <!-- Home Section -->
-<section id="home">
-    <img class="Me" src="20250917_015815.jpg" alt="Me">
-    <h1>Hello, I'm <span style="color:mediumseagreen; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Md. Nabinur Islam Roni</span></h1>
-    <p>A passionate web developer creating clean and modern designs. I am learning and coding with HTML, CSS, JS, PYTHON(DJANGO), BOOTSTRAP etc. 
-        Familiarity with ASP DOTNET. I have completed beginner to high-mid level <strong style="color: mediumseagreen;">10+</strong> projects. 
-        I have soft and hard both skills.
-        | I have completed a 80 hours program under by Jagannath University ICT DIVISION. I got a certificate of Python (Django). </p>
-    <br><br>
-    <img style="width: 70%;" src="certificate28129_page-0001281294931645574907774280.jpg" alt="certificate">
-</section>
+            <br><br>
+            <!-- Learn More -->
+            <div class="learn-more">
+              <a href="#about">Learn More</a>
+              <span class="arrow">↓</span>
+            </div>
+        </section>
 
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="about-content">
+              <h2 class="section-title">About Me</h2>
+                <p>A passionate web developer creating clean and modern designs. I am learning and coding with HTML, CSS, JS, PYTHON(DJANGO), BOOTSTRAP etc. Familiarity with ASP DOTNET. I have completed beginner to high-mid level <strong style="color: var(--primary-blue);">10+</strong> projects. I have soft and hard both skills. | I have completed a 80 hours program under by Jagannath University ICT DIVISION. I got a certificate of Python (Django).</p>
+                <p>My journey in development constantly has me exploring new technologies, contributing to open-source projects, or sharing my knowledge through technical writing and mentoring.</p>
+                <div class="about-stats">
+                    <!-- <div class="about-stat-item">
+                        <strong>5+</strong>
+                        <span>Years Experience</span>
+                    </div> -->
+                    <div class="about-stat-item">
+                        <strong>10+</strong>
+                        <span>Projects Completed</span>
+                    </div>
+                    <!-- <div class="about-stat-item">
+                        <strong>30+</strong>
+                        <span>Happy Clients</span>
+                    </div> -->
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="certificate28129_page-0001281294931645574907774280.jpg" alt="Nabinur Islam Roni django certificate">
+            </div>
+        </section>
 
-  <!-- About Section -->
-  <!-- About Section -->
-<section id="about">
-  <h2>About Me</h2>
+        <!-- Skills & Expertise -->
+        <section id="skills" class="skills-section">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <p class="intro">A comprehensive set of technical skills and tools I use to bring ideas to life.</p>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fas fa-code icon"></i>
+                    <h3>Frontend Development</h3>
+                    <p>Building responsive, interactive, and user-friendly interfaces.</p>
+                    <div class="skill-tags">
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <!-- <span class="skill-tag">Next.JS</span>
+                        <span class="skill-tag">Tailwind CSS</span>
+                        <span class="skill-tag">Redux</span> -->
+                        <span class="skill-tag">HTML</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-server icon"></i>
+                    <h3>Backend Development</h3>
+                    <p>Designing and implementing robust, scalable, and secure server-side logic.</p>
+                    <div class="skill-tags">
+                        <!-- <span class="skill-tag">Node.JS</span> -->
+                        <span class="skill-tag">Python</span>
+                        <!-- <span class="skill-tag">MongoDB</span> -->
+                        <span class="skill-tag">PostgreSQL/SQlite</span>
+                        <span class="skill-tag">Django</span>
+                        <!-- <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">GraphQL</span> -->
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-paint-brush icon"></i>
+                    <h3>Design</h3>
+                    <p>Translating concepts into visually appealing and intuitive user experiences.</p>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Figma Basic</span>
+                        <!-- <span class="skill-tag">Adobe XD</span>
+                        <span class="skill-tag">UI/UX Design</span> -->
+                        <span class="skill-tag">Responsive Design</span>
+                        <!-- <span class="skill-tag">Prototyping</span> -->
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-toolbox icon"></i>
+                    <h3>Tools & Others</h3>
+                    <p>Utilizing a variety of tools for efficient development and deployment.</p>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <!-- <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">CI/CD</span>
+                        <span class="skill-tag">Agile</span>
+                        <span class="skill-tag">Testing</span> -->
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <div class="about-container">
-    <!-- Left Side: Skills -->
-    <div class="skills">
-  <h3>Skills</h3>
-  <br>
-  <div class="skill">
-    <span>HTML</span>
-    <p style="display:flex; justify-content:right; align-items:right;">90%</p>
-    <div class="progress-bar">
-      <div class="progress" style="--width:90%"></div>
-    </div>
-  </div>
+        <!-- Featured Projects -->
+        <section id="projects" class="projects-section">
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="intro">A selection of recent projects that showcase my skills and experience.</p>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="favicon.png" alt="E-commerce Platform">
+                    <div class="project-content">
+                        <h3> "Device Zone" E-commerce Platform</h3>
+                        <span>Full-stack Web Application</span>
+                        <p>A full-featured online shopping platform with user authentication, product management, and secure payment processing.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Django</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">SQLite</span>
+                            <span class="project-tag">HTML/CSS</span>
+                        </div>
+                        <div class="project-actions">
+                            <!-- <a href="#"><i class="fas fa-globe"></i> Live Demo</a> -->
+                            <a href="https://github.com/2210alphAroni/Device-Zone-E-Commerce-Website" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="images.png" alt="Movie Watchlist website">
+                    <div class="project-content">
+                        <h3>Real-Time Movies WatchList Website</h3>
+                        <span>Collaborative Productivity Tool & focus on backend with AJEX Functionality.</span>
+                        <p>Collaborative task management tool with real-time updates, user roles, and project tracking functionalities.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Django</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">PostgreSQL</span>
+                            <span class="project-tag">HTML/CSS</span>
+                        </div>
+                        <div class="project-actions">
+                            <!-- <a href="#"><i class="fas fa-globe"></i> Live Demo</a> -->
+                            <a href="https://github.com/2210alphAroni/Movie-Watch-List-Website" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="surofashion.png" alt="Surofashion website static">
+                    <div class="project-content">
+                        <h3>Surofashion Website</h3>
+                        <span>A Static fashion website</span>
+                        <p>A Static fashion website for categories product for Man, Women & Childs all type of Cloths.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://surofashion-com-website-build-using-html.onrender.com/" target="_blank"><i class="fas fa-globe"></i> Live Demo</a>
+                            <a href="https://github.com/2210alphAroni/SuroFashion.com-Website-build-using-HTML-CSS-JAVASCRIPT" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <div class="skill">
-    <span>CSS</span>
-    <p style="display:flex; justify-content:right; align-items:right;">70%</p>
-    <div class="progress-bar">
-      <div class="progress" style="--width:70%"></div>
-    </div>
-  </div>
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="intro">Have a project in mind or want to collaborate? I'd love to hear from you!</p>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h4>Contact Information</h4>
+                    <p>Feel free to reach out through any of these channels, and I'll respond as soon as possible.</p>
+                    <div class="contact-info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:nabinuri80@gmail.com">nabinuri80@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+880 1727687830</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Dhaka-kawla</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="yourname@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Tell me about your project." required></textarea>
+                        </div>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
 
-  <div class="skill">
-    <span>JavaScript</span>
-    <p style="display:flex; justify-content:right; align-items:right;">30%</p>
-    <div class="progress-bar">
-      <div class="progress" style="--width:30%"></div>
-    </div>
-  </div>
-
-  <div class="skill">
-    <span>Python</span>
-    <p style="display:flex; justify-content:right; align-items:right;">60%</p>
-    <div class="progress-bar">
-      <div class="progress" style="--width:60%"></div>
-    </div>
-  </div>
-
-  <div class="skill">
-    <span>Django</span>
-    <p style="display:flex; justify-content:right; align-items:right;">65%</p>
-    <div class="progress-bar">
-      <div class="progress" style="--width:65%"></div>
-    </div>
-  </div>
-
-  <div class="skill">
-    <span>C#</span>
-    <p style="display:flex; justify-content:right; align-items:right;">30%</p>
-    <div class="progress-bar">
-      <div class="progress" style="--width:30%"></div>
-    </div>
-  </div>
-
-  <div class="skill">
-    <span>ASP .NET</span>
-    <p style="display:flex; justify-content:right; align-items:right;">15%</p>
-    <div class="progress-bar">
-      <div class="progress" style="--width:15%"></div>
-    </div>
-  </div>
-</div>
-
-    <!-- Right Side: Languages -->
-    <div class="languages">
-      <h3>Languages</h3>
-      <br>
-      <ul>
-        <li>English – Fluent</li>
-        <li>Bengali – Native</li>
-        <li>Hindi – Intermediate</li>
-      </ul>
-    </div>
-  </div>
-  <br><br>
-
-  <!-- Cv section -->
-     <div class="resume">
-      <h4 style="font-family: monospace; font-size: 1.3rem; color:mediumseagreen;">My Resume</h4><br>
-      <button><a style="text-decoration: none; color: #ddd; font-family: monospace; font-weight: bold;"
-         href="https://drive.google.com/file/d/1K8TVnERFuj31oqmd8vOjr6vuBYxbM2OT/view?usp=drive_link" target="_blank">Download</a></button>
-     </div>
-</section>
-
-
-  <!-- Projects Section -->
-  <section id="projects">
-    <h2 style="color: mediumseagreen; font-size: 1.6rem; font-family: monospace; text-align: center;">Projects</h2>
-    <div class="project-list">
-      <div class="project">
-        <h3>Portfolio Website</h3>
-        <p>A personal portfolio built using HTML, CSS, JS and Django to showcase my projects.</p>
-        <a href="https://github.com/2210alphAroni/Portfolio-project-using-Django-Framework" target="_blank">Code</a>
-      </div>
-      <div class="project">
-        <h3>Movie Watch List Website</h3>
-        <p>Build using HTML, BOOTSTRAP, JS & Django. Full Dynamic Website.</p>
-        <a href="https://github.com/2210alphAroni/Movie-Watch-List-Website" target="_blank">Code</a>
-      </div>
-      <div class="project">
-        <h3>Device Zone E-Commerce Website</h3>
-        <p>Build using HTML, CSS, JS & Django. Full Dynamic Website.</p>
-        <a href="https://github.com/2210alphAroni/Device-Zone-E-Commerce-Website" target="_blank">Code</a>
-      </div>
-      <div class="project">
-        <h3>My AIGallery Website</h3>
-        <p>Build using Bootstrap & Django. Full Dynamic Website.</p>
-        <a href="https://github.com/2210alphAroni/My-AIGallery-Website-Using-Django-Frameworks" target="_blank">Code</a>
-      </div>
-      <div class="project">
-        <h3>Cafee Restaurant Reservation System Website</h3>
-        <p>Build using HTML, CSS, JS & ASP DOTNET CORE. Full Dynamic Website.</p>
-        <a href="https://github.com/2210alphAroni/Cafee-Restaurent-Reservation-system-using-ASP-DOTNET" target="_blank">Code</a>
-      </div>
-      <div class="project">
-        <h3>CGPA Calculation</h3>
-        <p>Build using HTML, CSS, JS & Django. Full Dynamic Project.</p>
-        <a href="https://github.com/2210alphAroni/CGPA-Calculation-Using-HTML-CSS-JAVASCRIPT-Python-Django-" target="_blank">Code</a>
-      </div>
-      <div class="project">
-        <h3>Student Course Enrolling System Website</h3>
-        <p>Build using HTML, CSS & Django. Full Dynamic Website.</p>
-        <a href="https://github.com/2210alphAroni/Students-Course-Enrolling-System-using-Django-Framework" target="_blank">Code</a>
-      </div>
-      <div class="project">
-        <h3>CRUD Operation</h3>
-        <p>Build using HTML, CSS & Django. Full Dynamic Project</p>
-        <a href="https://github.com/2210alphAroni/CURD--PROJECT-USING-DJANGO-FRAMEWORK-Create-Read-Update-Delete" target="_blank">Code</a>
-      </div>
-      <div class="project">
-        <h3>Suro Fashion web design website</h3>
-        <p>Build using HTML, CSS, Simple JS  with Django path. It is static Website.</p>
-        <a href="https://github.com/2210alphAroni/SuroFashion.com-Website-build-using-HTML-CSS-JAVASCRIPT" target="_blank">Code</a>&nbsp;&nbsp;&nbsp;
-        <a href="https://surofashion-com-website-build-using-html.onrender.com/" target="_blank">Live</a>
-      </div>
-      <div class="project">
-        <h3>Movies Management System Website</h3>
-        <p>Build using HTML, CSS, JS & Django. It was built in template. I just create to add django path.</p>
-        <a href="https://github.com/2210alphAroni/Movies-management-system" target="_blank">Code</a>
-      </div>
-      <div class="project">
-        <h3>Whats-Up Web Design</h3>
-        <p>Build using HTML & CSS. It is static.</p>
-        <a href="https://github.com/2210alphAroni/WhatsApp-WEB-design" target="_blank">Code</a>&nbsp;&nbsp;&nbsp;
-        <a href="https://whatsapp-web-design.onrender.com/" target="_blank">Live</a>
-      </div>
-      <div class="project">
-        <h3>Facebook Login Page</h3>
-        <p>Build using HTML & CSS. It is static.</p>
-        <a href="https://github.com/2210alphAroni/facebook-login-page" target="_blank">Code</a>
-      </div>
-      <div class="project">
-        <h3>Instagram Login Page</h3>
-        <p>Build using HTML & CSS. It is Static.</p>
-        <a href="https://github.com/2210alphAroni/Static-Instagram-login-page-" target="_blank">Code</a>&nbsp;&nbsp;&nbsp;
-        <a href="https://static-instagram-login-page.onrender.com/" target="_blank">Live</a>
-      </div>
-      <div class="project">
-        <h3>Static Simple Blog Website</h3>
-        <p>Build using HTML & CSS.</p>
-        <a href="https://github.com/2210alphAroni/Blog-site-using-HTML-and-CSS" target="_blank">Code</a>&nbsp;&nbsp;&nbsp;
-        <a href="https://blog-site-using-html-and-css.onrender.com" target="_blank">Live</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2 style="color:mediumseagreen;">Contact</h2>
-    <br>
-    <form onsubmit="sendMessage(event)">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea rows="4" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-    <br><br>
-    
-    <section id="location">
-  <h2 style="color:mediumseagreen;">My Location</h2>
-  <p style="color:#ccc;">Find Me on the map below:</p>
-  <iframe 
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3649.215712554803!2d90.41358607437864!3d23.84647268508304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c67cb65d05c9%3A0x1dadab27b5e4dcc1!2sKawlar%20Main%20Rd%2C%20Dhaka%201230!5e0!3m2!1sen!2sbd!4v1759899726121!5m2!1sen!2sbd" 
-    width="100%" 
-    height="450" 
-    style="border:0;" 
-    allowfullscreen="" 
-    loading="lazy" 
-    referrerpolicy="no-referrer-when-downgrade">
-</iframe>
-</section>
-
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>© 2025; All Rights Reserved | Developed By - Nabinur Islam Roni</p>
-<br>
-<hr>
-<br>
-
-<a href="https://github.com/2210alphAroni" target="_blank">Github</a>&nbsp;&nbsp;
-<a href=" https://www.linkedin.com/in/md-nabinur-islam-roni-46b894373?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">LinkedIn</a>
-  </footer>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col about-me">
+                <h4>Md. Nabinur Islam Roni</h4>
+                <p>Web Designer & Developer crafting beautiful digital experiences.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/md-nabinur-islam-roni-46b894373?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/2210alphAroni" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://surofashion-com-website-build-using-html.onrender.com/" target="_blank" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2025 Nabinur Islam Roni. All rights reserved.
+        </div>
+    </footer>
 
 </body>
 </html>
