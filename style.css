@@ -433,6 +433,33 @@
             color: var(--white);
         }
 
+       /* Resume section */
+       .resume {
+        text-align: center; /* Centers inline elements like button */
+        margin-top: 20px;
+        }
+
+        .resume button {
+        background-color: #007bff;
+        border: none;
+        padding: 12px 24px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.3s ease;
+        }
+
+        .resume button:hover {
+        background-color: #0056b3;
+        }
+
+        .resume button a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 500;
+        }
+
+
         /* Featured Projects */
         .projects-section {
             padding: 5rem 5%;
