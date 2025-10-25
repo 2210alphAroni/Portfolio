@@ -657,7 +657,7 @@
 
         .contact-form {
             flex: 1;
-            min-width: 350px;
+           
             background-color: var(--light-grey);
             padding: 2.5rem;
             border-radius: 8px;
