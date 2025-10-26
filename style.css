@@ -53,7 +53,9 @@
         }
 
         /* Header Animation on load */
-        header {
+
+        /* --- Header Base --- */
+            header {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -63,53 +65,100 @@
             position: sticky;
             top: 0;
             z-index: 1000;
-            animation: slideInDown 0.8s ease-out; /* Header animation on page load */
-        }
+            }
 
-        header .logo {
+            /* --- Logo --- */
+            header .logo {
             font-weight: 700;
             font-size: 1.5rem;
             color: var(--dark-blue);
-        }
+            }
 
-        header nav ul {
+            /* --- Nav Links --- */
+            .nav-links ul {
             list-style: none;
+            display: flex;
             margin: 0;
             padding: 0;
-            display: flex;
-        }
+            }
 
-        header nav ul li {
+            .nav-links ul li {
             margin-left: 2rem;
-        }
+            }
 
-        header nav ul li a {
+            .nav-links ul li a {
             color: var(--dark-blue);
             font-weight: 500;
+            text-decoration: none;
             transition: color 0.3s ease, transform 0.2s ease;
-        }
+            }
 
-        header nav ul li a:hover {
+            .nav-links ul li a:hover {
             color: var(--primary-blue);
-            text-decoration: none;
-            transform: translateY(-2px); /* Lift effect on hover */
-        }
-
-        header .contact-btn {
-            background-color: var(--primary-blue);
-            color: var(--white);
-            padding: 0.7rem 1.5rem;
-            border-radius: 5px;
-            font-weight: 500;
-            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
-        }
-
-        header .contact-btn:hover {
-            background-color: #3a7bd5;
-            text-decoration: none;
             transform: translateY(-2px);
-            box-shadow: var(--shadow); /* subtle shadow on hover */
-        }
+            }
+
+            /* --- Mobile Menu Icon --- */
+            .mobile-menu-icon {
+            display: none;
+            cursor: pointer;
+            }
+
+            /* Hide the checkbox (used for toggling) */
+            .menu-toggle {
+            display: none;
+            }
+
+            /* ---------------- RESPONSIVE ---------------- */
+            @media (max-width: 768px) {
+            /* Hide nav by default */
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 70px;
+                right: 5%;
+                left: -5%;
+                background: white;
+                width: 40%;
+                border-radius: 10px;
+                text-align: center;
+            }
+
+            .nav-links ul {
+                flex-direction: column;
+            }
+
+            .nav-links ul li {
+                margin: 1rem 0;
+            }
+
+            /* Show the icon */
+            .mobile-menu-icon {
+                display: block;
+            }
+
+            /* When checkbox is checked → show nav */
+            .menu-toggle:checked ~ .nav-links {
+                display: block;
+                animation: slideDown 0.4s ease forwards;
+            }
+
+            /* Animation for smooth slide effect */
+            @keyframes slideDown {
+                from {
+                opacity: 0;
+                transform: translateY(-10px);
+                }
+                to {
+                opacity: 1;
+                transform: translateY(0);
+                }
+            }
+            }
+
+
+        /* header end */
+
 
         /* Hero Section */
         .hero-section {
@@ -657,11 +706,11 @@
 
         .contact-form {
             flex: 1;
-           
-            background-color: var(--light-grey);
+            min-width: 350px;
+            /* background-color: var(--light-grey); */
             padding: 2.5rem;
             border-radius: 8px;
-            box-shadow: var(--shadow);
+            /* box-shadow: var(--shadow); */
         }
 
         .contact-form .form-group {
@@ -677,7 +726,7 @@
 
         .contact-form input,
         .contact-form textarea {
-            width: 100%;
+            width: 90%;
             padding: 0.8rem 1rem;
             border: 1px solid var(--medium-grey);
             border-radius: 5px;
@@ -709,7 +758,7 @@
             font-weight: 600;
             cursor: pointer;
             transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
-            width: 100%;
+            width: 90%;
         }
 
         .contact-form button:hover {
@@ -731,6 +780,7 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
+            max-width: 1200px;
             margin: 0 auto 2rem;
             text-align: left;
             gap: 2rem;
