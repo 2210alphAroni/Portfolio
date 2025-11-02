@@ -167,8 +167,59 @@ html {scroll-behavior: smooth;}
 .project-actions a{display:inline-flex;align-items:center;gap:8px;padding:8px 10px;border-radius:8px;border:1px solid rgba(20,30,40,.05);text-decoration:none;color:var(--dark-900);transition:all .22s}
 .project-actions a:hover{background:var(--primary-500);color:#fff;transform:translateY(-3px)}
 
-/* Resume */
-.resume-section a{margin-left:485px ;}
+
+/* Resume Section */
+.resume-section {
+  display: flex;
+  justify-content: center; /* center horizontally */
+  align-items: center;     /* center vertically */
+  text-align: center;      /* center text inside */      
+  background-color: var(--light-100); /* optional background */
+}
+
+.resume-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem; /* space between title and button */
+}
+
+.section-title1 {
+  font-size: 1.8rem;
+  color: var(--dark-900);
+  font-weight: 700;
+  position: relative;
+}
+
+.section-title1::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  margin: 12px auto 0; /* center the line under title */
+  background: var(--primary-500);
+  border-radius: 4px;
+}
+
+/* Button styling if needed */
+.btn-primary {
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+/* Responsive tweak for smaller screens */
+@media (max-width: 600px) {
+  .section-title1 {
+    font-size: 1.5rem;
+  }
+  .btn-primary {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
+
 
 /* CONTACT */
 .contact-section{padding:40px 0}
@@ -216,7 +267,6 @@ footer{background:var(--dark-900);color:#fff;padding:36px 20px}
   .contact-grid{grid-template-columns:1fr}
   .about-content p{color:var(--muted);line-height:1.6;text-align: center;}
   .about-stats{display:flex;gap:12px;margin-top:18px;flex-direction: column;}
-  .resume-section a{margin-left:128px ;}
 }
 @media (max-width:900px){
   .header-inner{padding:12px 18px}
@@ -229,7 +279,6 @@ footer{background:var(--dark-900);color:#fff;padding:36px 20px}
   .footer-grid{grid-template-columns:1fr; text-align:left}
   .about-content p{color:var(--muted);line-height:1.6;text-align: center;}
   .about-stats{display:flex;gap:12px;margin-top:18px;flex-direction: column;}
-  .resume-section a{margin-left:128px ;}
 }
 
 /* when menu toggle checked show nav as dropdown */
@@ -263,7 +312,6 @@ footer{background:var(--dark-900);color:#fff;padding:36px 20px}
   .card img{height:140px}
   .about-content p{color:var(--muted);line-height:1.6;text-align: center;}
   .about-stats{display:flex;gap:12px;margin-top:18px;flex-direction: column;}
-  .resume-section a{margin-left:128px ;}
 }
 
 /* accessibility focus */
