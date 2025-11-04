@@ -36,6 +36,17 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+
+
+      <!-- 🌗 DAY/NIGHT TOGGLE BUTTON -->
+      <div class="theme-toggle">
+        <input type="checkbox" id="theme-switch">
+        <label for="theme-switch" class="switch">
+          <i class="fas fa-sun"></i>
+          <i class="fas fa-moon"></i>
+          <span class="slider"></span>
+        </label>
+      </div>
     </div>
   </header>
 
@@ -45,7 +56,7 @@
       <div class="hero-inner">
         <div class="hero-left">
           <div class="avatar-wrap">
-            <img src="20250917_015815.jpg" alt="Nabinur Islam Roni" class="hero-image">
+            <img class="myself" src="20250917_015815.jpg" alt="Nabinur Islam Roni" class="hero-image">
             <div class="floating-dot"></div>
           </div>
 
@@ -112,7 +123,7 @@
         </div>
 
         <div class="about-image">
-          <img src="20250917_015815.jpg" alt="Nabinur">
+          <img class="myself" src="20250917_015815.jpg" alt="Nabinur">
         </div>
       </div>
     </section>
@@ -121,14 +132,14 @@
     <section class="resume-section">
       <div class="container resume-inner">
         <h2 class="section-title1">Resume / CV</h2>
-        <a class="btn btn-primary" target="_blank" href="https://drive.google.com/file/d/1K8TVnERFuj31oqmd8vOjr6vuBYxbM2OT/view?usp=drive_link">Download Resume</a>
+        <a class="btn btn-primary" target="_blank" href="https://drive.google.com/file/d/1MgQDDG89MAWMzOe8jKh3T0iuKJShOiCo/view?usp=drive_link">Download Resume</a>
       </div>
     </section>
 
     <!-- ========== SKILLS ========== -->
     <section id="skills" class="skills-section">
       <div class="container">
-        <h2 class="section-title">Skills & Expertise</h2>
+        <h2 class="section-title">Skills With Learning</h2>
         <p class="intro">Tools and technologies I use to build modern web applications.</p>
 
         <div class="skills-grid">
@@ -258,7 +269,7 @@
               <i class="fas fa-envelope"></i>
               <div>
                 <h5>Email</h5>
-                <a href="mailto:nabinuri80@gmail.com">nabinuri80@gmail.com</a>
+                <a class="email" href="mailto:nabinuri80@gmail.com">nabinuri80@gmail.com</a>
               </div>
             </div>
 
@@ -280,7 +291,7 @@
           </div>
 
           <div class="contact-form">
-            <form method="POST">
+            <form method="get">
               <label for="name">Name</label>
               <input id="name" name="name" type="text" placeholder="Your name" required>
 
@@ -300,6 +311,7 @@
 
   <!-- ========== FOOTER ========== -->
   <footer>
+    <hr class="hr-tag" style="opacity: 0.1; width: 85%; background-color: #6B7280;"><br>
     <div class="container footer-grid">
       <div class="footer-about">
         <h4>Md. Nabinur Islam Roni</h4>
