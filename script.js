@@ -129,3 +129,15 @@ document.addEventListener("click", (e) => {
     reflect.remove();
   }, 600);
 });
+
+
+/* 3D Cube Hover Interaction */
+const cube = document.querySelector(".cube");
+if (cube) {
+  cube.addEventListener("mouseover", () => {
+    cube.style.animationPlayState = "paused";
+  });
+  cube.addEventListener("mouseout", () => {
+    cube.style.animationPlayState = "running";
+  });
+}
