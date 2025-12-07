@@ -110,3 +110,22 @@ if (themeSwitch) {
     document.body.style.transition = "all 0.5s ease";
   });
 }
+
+
+
+/* =======================
+   7. Click Reflection Effect
+======================= */
+document.addEventListener("click", (e) => {
+  const reflect = document.createElement("span");
+  reflect.classList.add("click-reflect");
+
+  reflect.style.left = `${e.pageX}px`;
+  reflect.style.top = `${e.pageY}px`;
+
+  document.body.appendChild(reflect);
+
+  setTimeout(() => {
+    reflect.remove();
+  }, 600);
+});
